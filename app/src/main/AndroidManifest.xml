@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.isgil27.enginetools11">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ElectronicaRecursos" />
+        <activity android:name=".ControlRecursos" />
+        <activity android:name=".TermoRecursos" />
+        <activity android:name=".CalculoRecursos" />
+        <activity android:name=".Convertidor"
+
+            />
+        <activity
+            android:name=".Interpolacion"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Interpolacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EcuacionSolver" />
+
+        <activity android:name=".Capacitor"
+            android:parentActivityName=".ElectronicaRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ElectronicaRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Capacitor" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

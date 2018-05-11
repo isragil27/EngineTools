@@ -1,0 +1,118 @@
+<resources>
+    <!--Principales recursos-->
+    <string name="app_name">EngineTools1.1</string>
+    <string name="tab_text_1">Herramientas</string>
+    <string name="tab_text_2">Recursos</string>
+    <string name="tab_text_3">Bibliografia</string>
+
+
+    <!--Herramientas-->
+    <string name="convertidor">Convertidor Unidades</string>
+    <string name="interpol">Interpolacion</string>
+    <string name="ecsolver">Ecuacion Solver</string>
+    <string name="calcres">Calculadora Resistencias</string>
+
+    <!--Materias-->
+    <string name="control">Control</string>
+    <string name="calculo">Calculo</string>
+    <string name="termo">Termodinamica</string>
+    <string name="electronica">Electronica</string>
+    <!--Bibliografia arreflo-->
+    <string-array name="bibliografia">
+        <item>@string/control</item>
+        <item>@string/calculo</item>
+        <item>@string/termo</item>
+        <item>@string/electronica</item>
+    </string-array>
+
+
+    <!--Arreglo medidas-->
+    <string-array name="arraymedidas">
+        <item>Longitud</item>
+        <item>Peso</item>
+        <item>Potencia</item>
+    </string-array>
+
+    <!--Arreglo longitud-->
+    <string-array name="arraylongitud">
+        <item>mm</item>
+        <item>cm</item>
+        <item>m</item>
+        <item>inch</item>
+        <item>ft</item>
+        <item>yd</item>
+        <item>mile</item>
+    </string-array>
+    <!--Arreglo PEso-->
+    <string-array name="arraypeso">
+        <item>mg</item>
+        <item>g</item>
+        <item>kg</item>
+        <item>lb</item>
+        <item>oz</item>
+        <item>tonne</item>
+    </string-array>
+    <!--Arreglo Potencia-->
+    <string-array name="arrayapotencia">
+        <item>W</item>
+        <item>kW</item>
+        <item>MW</item>
+        <item>kcal/s</item>
+        <item>HP</item>
+        <item>BTU/h</item>
+    </string-array>
+
+
+    <string-array name="bibliografiaprin">
+        <item>Lista libros</item>
+
+        <item>Canales,blogs y paginas</item>
+    </string-array>
+
+    <!--Arreglos de Recursos de Materias-->
+    <string-array name="arrayelectr">
+        <item>Datasheets</item>
+        <item>Tabla capacitores</item>
+        <item>Arreglos Basicos Amp.Op.</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="arraycalculo">
+        <item>Integrales</item>
+        <item>Derivadas</item>
+        <item>Transformada Laplace</item>
+        <item>Transformada Fourier</item>
+    </string-array>
+
+    <string-array name="arraycontrol">
+        <item>Reduccion diagramas bloques</item>
+        <item>Subamortiguado</item>
+        <item>Criticamente amortiguado</item>
+        <item>sd</item>
+    </string-array>
+
+    <string-array name="arraytermo">
+        <item>Tablas agua</item>
+        <item>Gases ideales</item>
+        <item>sdfsdf</item>
+        <item>sd</item>
+    </string-array>
+
+    <!--Varios-->
+    <string name="Interpolarbtn">INTERPOLAR</string>
+    <string name="calcularbtn">CALCULAR</string>
+    <string name="limpiarbtn">C</string>
+    <string name="raicestitulo">RAICES</string>
+
+
+    <string-array name="valoresx">
+        <item>X1=</item>
+        <item>X2=</item>
+        <item>X3=</item>
+        <item>X4=</item>
+        <item>X5=</item>
+        <item>X6=</item>
+    </string-array>
+
+
+</resources>
