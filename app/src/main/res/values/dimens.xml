@@ -11,6 +11,11 @@
     <dimen name="elevtxtimgbtn">12dp</dimen>
     <dimen name="anchointer">94dp</dimen>
     <dimen name="altointer">40dp</dimen>
+    <dimen name="separacionherras">65dp</dimen>
+
+    <dimen name="anchoceldaec">40dp</dimen>
+    <dimen name="altoceldaec">40dp</dimen>
+
 
 
 

@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.isgil27.enginetools11.Capacitor">
+    tools:context="com.example.isgil27.enginetools11.Recursos.ElectronicaRecursos.Capacitor">
 
     <include
         android:id="@+id/toolbarplantilla"
         layout="@layout/miactionbar"></include>
+
 
 </android.support.constraint.ConstraintLayout>

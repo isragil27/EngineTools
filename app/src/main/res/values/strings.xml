@@ -1,6 +1,6 @@
 <resources>
     <!--Principales recursos-->
-    <string name="app_name">EngineTools1.1</string>
+    <string name="app_name">EngineTools</string>
     <string name="tab_text_1">Herramientas</string>
     <string name="tab_text_2">Recursos</string>
     <string name="tab_text_3">Bibliografia</string>
@@ -35,7 +35,6 @@
 
     <!--Arreglo longitud-->
     <string-array name="arraylongitud">
-        <item>mm</item>
         <item>cm</item>
         <item>m</item>
         <item>inch</item>
@@ -62,19 +61,17 @@
         <item>BTU/h</item>
     </string-array>
 
+    <!--Arreglos de Bibliografiaprin-->
+    <string name="Listlibros">Lista libros</string>
+    <string name="Listinter">Canales,blogs y paginas</string>
 
-    <string-array name="bibliografiaprin">
-        <item>Lista libros</item>
 
-        <item>Canales,blogs y paginas</item>
-    </string-array>
 
     <!--Arreglos de Recursos de Materias-->
     <string-array name="arrayelectr">
         <item>Datasheets</item>
         <item>Tabla capacitores</item>
         <item>Arreglos Basicos Amp.Op.</item>
-        <item></item>
     </string-array>
 
     <string-array name="arraycalculo">
@@ -86,16 +83,15 @@
 
     <string-array name="arraycontrol">
         <item>Reduccion diagramas bloques</item>
-        <item>Subamortiguado</item>
-        <item>Criticamente amortiguado</item>
-        <item>sd</item>
+        <item>Sistemas Primer Orden</item>
+        <item>Sistemas Segundo Orden</item>
     </string-array>
 
     <string-array name="arraytermo">
         <item>Tablas agua</item>
+        <item>Tablas R-134a</item>
+        <item>Carta psicometrica</item>
         <item>Gases ideales</item>
-        <item>sdfsdf</item>
-        <item>sd</item>
     </string-array>
 
     <!--Varios-->
@@ -103,15 +99,13 @@
     <string name="calcularbtn">CALCULAR</string>
     <string name="limpiarbtn">C</string>
     <string name="raicestitulo">RAICES</string>
+    <string name="ecuacionsexto">aX^2+bX+c=0</string>
 
 
     <string-array name="valoresx">
         <item>X1=</item>
         <item>X2=</item>
-        <item>X3=</item>
-        <item>X4=</item>
-        <item>X5=</item>
-        <item>X6=</item>
+
     </string-array>
 
 

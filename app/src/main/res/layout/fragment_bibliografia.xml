@@ -2,23 +2,24 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraintLayout"
-    android:background="@drawable/paper_3225109_1280"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/paper_3225109_1281"
 
-    tools:context="com.example.isgil27.enginetools11.HerramientasFragment">
+    tools:context="com.example.isgil27.enginetools11.Fragments.HerramientasFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ListView
         android:id="@+id/lstbiblio"
 
-        style="@style/Widget.AppCompat.Light.ListView.DropDown"
-        android:layout_width="wrap_content"
-        android:layout_height="353dp"
+        style="@style/Widget.AppCompat.ListView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.967"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"></ListView>

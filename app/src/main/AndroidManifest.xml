@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.isgil27.enginetools11">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,6 +14,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ElectronicaRecursos" />
-        <activity android:name=".ControlRecursos" />
-        <activity android:name=".TermoRecursos" />
-        <activity android:name=".CalculoRecursos" />
-        <activity android:name=".Convertidor"
-
-            />
         <activity
-            android:name=".Interpolacion"
+            android:name=".Recursos.ElectronicaRecursos.ElectronicaRecursos"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -39,14 +35,103 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".EcuacionSolver" />
-
-        <activity android:name=".Capacitor"
-            android:parentActivityName=".ElectronicaRecursos">
+        <activity
+            android:name=".Recursos.ControlRecursos.ControlRecursos"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".ElectronicaRecursos" />
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Interpolacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recursos.TermoRecursos.TermoRecursos"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Interpolacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recursos.CalculoRecursos.CalculoRecursos"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.CalculoRecursos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Herramientas.Convertidor"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Convertidor" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Herramientas.Interpolacion"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Interpolacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Herramientas.EcuacionSolver"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.EcuacionSolver" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recursos.ElectronicaRecursos.Datasheets"
+            android:parentActivityName=".Recursos.ElectronicaRecursos.Datasheets">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ElectronicaRecursos.Datasheets" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.Datasheets" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Recursos.ElectronicaRecursos.Capacitor"
+            android:parentActivityName=".Recursos.ElectronicaRecursos.Capacitor">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ElectronicaRecursos.Capacitor" />
 
             <intent-filter>
                 <action android:name="android.intent.action.Capacitor" />
@@ -54,6 +139,26 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name=".Recursos.ElectronicaRecursos.AmplOper"></activity>
+
+        <activity android:name=".Recursos.CalculoRecursos.Integrales"></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Derivadas"></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Laplace"></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Fourier"></activity>
+
+        <activity android:name=".Recursos.ControlRecursos.DiagBloq"></activity>
+        <activity android:name=".Recursos.ControlRecursos.SPO"></activity>
+        <activity android:name=".Recursos.ControlRecursos.SSO"></activity>
+
+        <activity android:name=".Recursos.TermoRecursos.TablaAgua"></activity>
+        <activity android:name=".Recursos.TermoRecursos.TablaRef"></activity>
+        <activity android:name=".Recursos.TermoRecursos.CartaPsi"></activity>
+        <activity android:name=".Recursos.TermoRecursos.GasIdeal"></activity>
+
+        <activity android:name=".Bibliografia.CalculoBiblio"></activity>
+        <activity android:name=".Bibliografia.CotrolBibliografia"></activity>
+        <activity android:name=".Bibliografia.TermoBiblio"></activity>
+        <activity android:name=".Bibliografia.ElectroBiblio"></activity>
     </application>
 
 </manifest>

@@ -4,8 +4,8 @@
     android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/paper_3225109_1280"
-    tools:context="com.example.isgil27.enginetools11.HerramientasFragment">
+    android:background="@drawable/paper_3225109_1281"
+    tools:context="com.example.isgil27.enginetools11.Fragments.HerramientasFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -93,7 +93,7 @@
         android:alpha="0.8"
         android:elevation="@dimen/elevacionimgbtn"
         android:scaleType="fitXY"
-        android:src="@drawable/calculo"
+        android:src="@drawable/calculo1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.038"
@@ -112,7 +112,7 @@
         android:elevation="@dimen/elevacionimgbtn"
         android:longClickable="false"
         android:scaleType="fitXY"
-        android:src="@drawable/electronica"
+        android:src="@drawable/electronica1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.038"
@@ -130,7 +130,7 @@
         android:layout_marginTop="8dp"
         android:elevation="@dimen/elevacionimgbtn"
         android:scaleType="fitXY"
-        android:src="@drawable/fisica"
+        android:src="@drawable/fisica1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.961"
@@ -147,7 +147,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:scaleType="fitXY"
-        android:src="@drawable/control"
+        android:src="@drawable/control1"
         android:elevation="@dimen/elevacionimgbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

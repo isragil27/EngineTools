@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.isgil27.enginetools11.Interpolacion">
+    tools:context="com.example.isgil27.enginetools11.Herramientas.Interpolacion">
 
     <include
         android:id="@+id/toolbarplantilla"
@@ -115,6 +115,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="onInterpolar"
         android:text="@string/Interpolarbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -127,11 +128,12 @@
         android:id="@+id/btnlimpiar"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:text="@string/limpiarbtn"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="onClear"
+        android:text="@string/limpiarbtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.746"
