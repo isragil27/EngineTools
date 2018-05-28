@@ -1,10 +1,14 @@
 package com.example.isgil27.enginetools11.Bibliografia;
 
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
+
 import com.example.isgil27.enginetools11.BaseDatos.GestorLibros;
 import com.example.isgil27.enginetools11.R;
 import java.util.ArrayList;
@@ -20,11 +24,23 @@ public class ElectroBiblio extends AppCompatActivity {
     private RecyclerView listaLibros;
     ArrayList<Libro> links = new ArrayList<Libro>();
     private RecyclerView listaInternet;
+    TextView titulo;
+    android.support.v7.widget.Toolbar mitoolbar;
 
     @Override
     protected void   onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.plantillabibliografia);
+
+        mitoolbar = (Toolbar) findViewById(R.id.toolbarplantilla);
+        setSupportActionBar(mitoolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        String titulostring = getResources().getString(R.string.electronicabiblio);
+        titulo = (TextView) findViewById(R.id.titulorecurso);
+        titulo.setText(titulostring);
 
         listaLibros=findViewById(R.id.rcvlistalibros);
         LinearLayoutManager llm = new LinearLayoutManager(getApplicationContext());
@@ -62,13 +78,13 @@ public class ElectroBiblio extends AppCompatActivity {
     {
         GestorLibros gestorAlbums = new GestorLibros(this.getApplicationContext());
         todoslibros = gestorAlbums.CargarAlbum();
-        for(int i=0; i<2;i++)
+        for(int i=12; i<15;i++)
         {
             libros.add(todoslibros.get(i));
         }
-        for(int i=0; i<2;i++)
+        for(int i=15; i<17;i++)
         {
-            links.add(todoslibros.get(i+1));
+            links.add(todoslibros.get(i));
         }
     }
 }

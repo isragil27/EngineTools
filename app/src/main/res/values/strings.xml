@@ -3,20 +3,20 @@
     <string name="app_name">EngineTools</string>
     <string name="tab_text_1">Herramientas</string>
     <string name="tab_text_2">Recursos</string>
-    <string name="tab_text_3">Bibliografia</string>
+    <string name="tab_text_3">Bibliografía</string>
 
 
     <!--Herramientas-->
     <string name="convertidor">Convertidor Unidades</string>
-    <string name="interpol">Interpolacion</string>
+    <string name="interpol">Interpolación</string>
     <string name="ecsolver">Ecuacion Solver</string>
     <string name="calcres">Calculadora Resistencias</string>
 
     <!--Materias-->
     <string name="control">Control</string>
-    <string name="calculo">Calculo</string>
-    <string name="termo">Termodinamica</string>
-    <string name="electronica">Electronica</string>
+    <string name="calculo">Cálculo</string>
+    <string name="termo">Termodinámica</string>
+    <string name="electronica">Electrónica</string>
     <!--Bibliografia arreflo-->
     <string-array name="bibliografia">
         <item>@string/control</item>
@@ -63,7 +63,7 @@
 
     <!--Arreglos de Bibliografiaprin-->
     <string name="Listlibros">Lista libros</string>
-    <string name="Listinter">Canales,blogs y paginas</string>
+    <string name="Listinter">Canales,blogs y páginas</string>
 
 
 
@@ -71,7 +71,7 @@
     <string-array name="arrayelectr">
         <item>Datasheets</item>
         <item>Tabla capacitores</item>
-        <item>Arreglos Basicos Amp.Op.</item>
+        <item>Arreglos Básicos Amp.Op.</item>
     </string-array>
 
     <string-array name="arraycalculo">
@@ -82,7 +82,7 @@
     </string-array>
 
     <string-array name="arraycontrol">
-        <item>Reduccion diagramas bloques</item>
+        <item>Reducción diagramas bloques</item>
         <item>Sistemas Primer Orden</item>
         <item>Sistemas Segundo Orden</item>
     </string-array>
@@ -90,7 +90,7 @@
     <string-array name="arraytermo">
         <item>Tablas agua</item>
         <item>Tablas R-134a</item>
-        <item>Carta psicometrica</item>
+        <item>Carta psicométrica</item>
         <item>Gases ideales</item>
     </string-array>
 
@@ -100,6 +100,12 @@
     <string name="limpiarbtn">C</string>
     <string name="raicestitulo">RAICES</string>
     <string name="ecuacionsexto">aX^2+bX+c=0</string>
+
+    <string name="calculobiblio">Bibliografía Cálculo</string>
+    <string name="controlbiblio">Bibliografía Control</string>
+    <string name="termobiblio">Bibliografía Termodinámica</string>
+    <string name="electronicabiblio">Bibliografía Electrónica</string>
+
 
 
     <string-array name="valoresx">

@@ -1,5 +1,6 @@
 package com.example.isgil27.enginetools11;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +9,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.isgil27.enginetools11.Fragments.BibliografiaFragment;
 import com.example.isgil27.enginetools11.Fragments.HerramientasFragment;
@@ -62,10 +66,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void cargarmenu()
-    {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.mimenu,menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId())
+        {
 
 
+            case R.id.mAcercaDe:
+               // Intent intentAcerca= new Intent( Bienvenida.this,AcercaDe.class);
+                //startActivity(intentAcerca);
+                Toast.makeText(getApplicationContext(),"acerca de",Toast.LENGTH_SHORT).show();
+                break;
+
+            case R.id.mAlbum:
+                Toast.makeText(getApplicationContext(),"Album",Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.mBucar:
+                Toast.makeText(getApplicationContext(),"Buscar",Toast.LENGTH_SHORT).show();
+                break;
+
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     /**

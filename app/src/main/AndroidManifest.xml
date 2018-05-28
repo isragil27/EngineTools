@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcherprueba"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcherprueba_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
@@ -24,10 +24,10 @@
         </activity>
         <activity
             android:name=".Recursos.ElectronicaRecursos.ElectronicaRecursos"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Recursos.ElectronicaRecursos.ElectronicaRecursos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Recursos.ElectronicaRecursos.ElectronicaRecursos" />
 
             <intent-filter>
                 <action android:name="android.intent.action.Interpolacion" />
@@ -37,10 +37,10 @@
         </activity>
         <activity
             android:name=".Recursos.ControlRecursos.ControlRecursos"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Recursos.ControlRecursos.ControlRecursos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Recursos.ControlRecursos.ControlRecursos" />
 
             <intent-filter>
                 <action android:name="android.intent.action.Interpolacion" />
@@ -50,10 +50,10 @@
         </activity>
         <activity
             android:name=".Recursos.TermoRecursos.TermoRecursos"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Recursos.TermoRecursos.TermoRecursos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Recursos.TermoRecursos.TermoRecursos" />
 
             <intent-filter>
                 <action android:name="android.intent.action.Interpolacion" />
@@ -63,10 +63,10 @@
         </activity>
         <activity
             android:name=".Recursos.CalculoRecursos.CalculoRecursos"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".Recursos.CalculoRecursos.CalculoRecursos">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".MainActivity" />
+                android:value=".Recursos.CalculoRecursos.CalculoRecursos" />
 
             <intent-filter>
                 <action android:name="android.intent.action.CalculoRecursos" />
@@ -139,26 +139,205 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".Recursos.ElectronicaRecursos.AmplOper"></activity>
+        <activity android:name=".Recursos.ElectronicaRecursos.AmplOper"
+            android:parentActivityName=".Recursos.ElectronicaRecursos.AmplOper">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ElectronicaRecursos.AmplOper" />
 
-        <activity android:name=".Recursos.CalculoRecursos.Integrales"></activity>
-        <activity android:name=".Recursos.CalculoRecursos.Derivadas"></activity>
-        <activity android:name=".Recursos.CalculoRecursos.Laplace"></activity>
-        <activity android:name=".Recursos.CalculoRecursos.Fourier"></activity>
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
 
-        <activity android:name=".Recursos.ControlRecursos.DiagBloq"></activity>
-        <activity android:name=".Recursos.ControlRecursos.SPO"></activity>
-        <activity android:name=".Recursos.ControlRecursos.SSO"></activity>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
 
-        <activity android:name=".Recursos.TermoRecursos.TablaAgua"></activity>
-        <activity android:name=".Recursos.TermoRecursos.TablaRef"></activity>
-        <activity android:name=".Recursos.TermoRecursos.CartaPsi"></activity>
-        <activity android:name=".Recursos.TermoRecursos.GasIdeal"></activity>
+            ></activity>
 
-        <activity android:name=".Bibliografia.CalculoBiblio"></activity>
-        <activity android:name=".Bibliografia.CotrolBibliografia"></activity>
-        <activity android:name=".Bibliografia.TermoBiblio"></activity>
-        <activity android:name=".Bibliografia.ElectroBiblio"></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Integrales"
+
+            android:parentActivityName=".Recursos.CalculoRecursos.CalculoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.CalculoRecursos.CalculoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            ></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Derivadas"
+            android:parentActivityName=".Recursos.CalculoRecursos.CalculoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.CalculoRecursos.CalculoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Laplace"
+            android:parentActivityName=".Recursos.CalculoRecursos.CalculoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.CalculoRecursos.CalculoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.CalculoRecursos.Fourier"
+            android:parentActivityName=".Recursos.CalculoRecursos.CalculoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.CalculoRecursos.CalculoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+
+        <activity android:name=".Recursos.ControlRecursos.DiagBloq"
+            android:parentActivityName=".Recursos.ControlRecursos.ControlRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ControlRecursos.ControlRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.ControlRecursos.SPO"
+            android:parentActivityName=".Recursos.ControlRecursos.ControlRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ControlRecursos.ControlRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.ControlRecursos.SSO"
+            android:parentActivityName=".Recursos.ControlRecursos.ControlRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.ControlRecursos.ControlRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+
+        <activity android:name=".Recursos.TermoRecursos.TablaAgua"
+            android:parentActivityName=".Recursos.TermoRecursos.TermoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.TermoRecursos.TermoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.TermoRecursos.TablaRef"
+            android:parentActivityName=".Recursos.TermoRecursos.TermoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.TermoRecursos.TermoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.TermoRecursos.CartaPsi"
+            android:parentActivityName=".Recursos.TermoRecursos.TermoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.TermoRecursos.TermoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Recursos.TermoRecursos.GasIdeal"
+            android:parentActivityName=".Recursos.TermoRecursos.TermoRecursos">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Recursos.TermoRecursos.TermoRecursos" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+
+        <activity android:name=".Bibliografia.CalculoBiblio"
+            android:parentActivityName=".Bibliografia.CalculoBiblio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bibliografia.CalculoBiblio" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Bibliografia.CotrolBibliografia"
+            android:parentActivityName=".Bibliografia.CalculoBiblio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bibliografia.CalculoBiblio" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Bibliografia.TermoBiblio"
+            android:parentActivityName=".Bibliografia.CalculoBiblio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bibliografia.CalculoBiblio" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
+        <activity android:name=".Bibliografia.ElectroBiblio"
+            android:parentActivityName=".Bibliografia.CalculoBiblio">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Bibliografia.CalculoBiblio" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.AmplOper" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            ></activity>
     </application>
 
 </manifest>
