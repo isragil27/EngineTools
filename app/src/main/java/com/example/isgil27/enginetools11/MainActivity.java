@@ -16,12 +16,17 @@ import android.widget.Toast;
 import com.example.isgil27.enginetools11.Fragments.BibliografiaFragment;
 import com.example.isgil27.enginetools11.Fragments.HerramientasFragment;
 import com.example.isgil27.enginetools11.Fragments.RecursosFragment;
+import com.example.isgil27.enginetools11.Menu.Acercade;
+import com.example.isgil27.enginetools11.Menu.Feedback;
+import com.example.isgil27.enginetools11.Menu.Info;
 
 
 public class MainActivity extends AppCompatActivity {
 
 
+    //Chaca comint
     /**
+     *
      * The {@link android.support.v4.view.PagerAdapter} that will provide
      * fragments for each of the sections. We use a
      * {@link FragmentPagerAdapter} derivative, which will keep every
@@ -78,18 +83,17 @@ public class MainActivity extends AppCompatActivity {
         {
 
 
-            case R.id.mAcercaDe:
-               // Intent intentAcerca= new Intent( Bienvenida.this,AcercaDe.class);
-                //startActivity(intentAcerca);
-                Toast.makeText(getApplicationContext(),"acerca de",Toast.LENGTH_SHORT).show();
+            case R.id.mFeedback:
+                Intent intentAcerca= new Intent(getApplicationContext(),Feedback.class);
+                startActivity(intentAcerca);
                 break;
 
-            case R.id.mAlbum:
-                Toast.makeText(getApplicationContext(),"Album",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.mBucar:
-                Toast.makeText(getApplicationContext(),"Buscar",Toast.LENGTH_SHORT).show();
-                break;
+            case R.id.mAcercaDe:
+                Intent intentAcerca1= new Intent(getApplicationContext(),Acercade.class);
+                startActivity(intentAcerca1);break;
+            case R.id.mInfo:
+                Intent intentAcerca2= new Intent(getApplicationContext(),Info.class);
+                startActivity(intentAcerca2);break;
 
         }
         return super.onOptionsItemSelected(item);
