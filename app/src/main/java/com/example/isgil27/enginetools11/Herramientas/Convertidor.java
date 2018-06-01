@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Resources;
+import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -11,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -21,6 +23,8 @@ import android.widget.Toast;
 
 import com.example.isgil27.enginetools11.FactoresConv;
 import com.example.isgil27.enginetools11.R;
+
+import java.text.DecimalFormat;
 
 public class Convertidor extends AppCompatActivity {
 
@@ -37,6 +41,7 @@ public class Convertidor extends AppCompatActivity {
     ArrayAdapter<String> AdapterLongitud;
     FactoresConv misfactores = new FactoresConv();
     int tamañoarreglo;
+    DecimalFormat df = new DecimalFormat("#.0000");
 
 
     //Arreglos factores de conversion
@@ -72,6 +77,7 @@ public class Convertidor extends AppCompatActivity {
         valor.setText("1");
 
 
+
         contextin = this;
         //Spinner
         spnmedidas = (Spinner) findViewById(R.id.spnmedidas);
@@ -79,10 +85,16 @@ public class Convertidor extends AppCompatActivity {
         spnmedidas.setAdapter(AdapterMedidad);
         spnunidades = (Spinner) findViewById(R.id.spnunidades);
         spnmedidas.setOnItemSelectedListener(ItemSelected());
-
         //Medidasmostradas
         lstmedidasmostradas = (ListView) findViewById(R.id.lstunidades);
         lstvaloresconvertidas = (ListView) findViewById(R.id.lstvaloresconvertidos);
+
+        /*View view = this.getCurrentFocus();
+        if (view != null) {
+            InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+            imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+        }*/
+
 
 
         //medidasmostradas.setOnItemClickListener(ItemListener());
@@ -120,6 +132,7 @@ public class Convertidor extends AppCompatActivity {
                         spnunidades.setOnItemSelectedListener(ItemSelectedPotencia());
                         break;
                 }
+                
             }
 
             @Override
@@ -274,13 +287,14 @@ public class Convertidor extends AppCompatActivity {
                 valoredt=0.0;
                 arrayfactores = misfactores.FactoresConv(tipomedida, unidad);
                 for (int k = 0; k < tamañoarreglo; k++) {
-                    arraymedidasconvertidas[k] = String.valueOf(valoredt * arrayfactores[k]);
+                    arraymedidasconvertidas[k] = String.valueOf(df.format(valoredt * arrayfactores[k]));
                 }
             }else {
                 valoredt = Double.parseDouble(valor.getText().toString());
                 arrayfactores = misfactores.FactoresConv(tipomedida, unidad);
                 for (int k = 0; k < tamañoarreglo; k++) {
-                    arraymedidasconvertidas[k] = String.valueOf(valoredt * arrayfactores[k]);
+                    arraymedidasconvertidas[k] = String.valueOf(df.format(valoredt * arrayfactores[k]));
+
                 }
 
             }
@@ -298,7 +312,7 @@ public class Convertidor extends AppCompatActivity {
     {
         valoredt = Double.parseDouble(valor.getText().toString());
         for (int j = 0; j < tamañoarreglo; j++) {
-            arraymedidasconvertidas[j] = String.valueOf(valoredt * arrayfactores[j]);
+            arraymedidasconvertidas[j] = String.valueOf(df.format(valoredt * arrayfactores[j]));
         }
     }
 
